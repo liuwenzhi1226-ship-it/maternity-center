@@ -25,7 +25,7 @@
     window.userName = "";
     window.csrfToken = "";
     window.ENVIRONMENT = "production";
-    window.__BASENAME__ = "";
+    window.__BASENAME__ = "/maternity-center";
     const appInfo = {
       name: "月子中心综合管理平台",
       avatar: "/maternity-center/favicon.svg",
@@ -127,13 +127,41 @@
   
   <title>月子中心综合管理平台</title>
   <script>
+    (function() {
+      var defaults = {
+        appId: '',
+        userId: '',
+        tenantId: '',
+        userName: '',
+        csrfToken: '',
+        IS_MIAODA_PREVIEW: false,
+        __FULLSTACK_RUNTIME_INITIALIZED__: false,
+        __platform__: {},
+        __BASENAME__: '',
+        ENVIRONMENT: 'production',
+        token: '',
+        MIAODA_BUILTIN_TTT: '',
+        lgw_csrf_token: '',
+        _appInfo: null,
+        _bucket_id: '',
+        _IS_Spark_RUNTIME: false,
+        MIAODA_APP_ID: ''
+      };
+      for (var key in defaults) {
+        if (window[key] === undefined) {
+          window[key] = defaults[key];
+        }
+      }
+    })();
+  </script>
+  <script>
     try {
       window.__platform__ = JSON.parse('{}');
     } catch (e) {
       console.error('Failed to parse __platform__', e);
     }
   </script>
-  <script type="module" crossorigin src="/maternity-center/assets/index-DpbCdz61.js"></script>
+  <script type="module" crossorigin src="/maternity-center/assets/index-DF_vfhhH.js"></script>
   <link rel="modulepreload" crossorigin href="/maternity-center/assets/rolldown-runtime-hePW80VL.js">
   <link rel="modulepreload" crossorigin href="/maternity-center/assets/radix-CiTMHFvq.js">
   <link rel="stylesheet" crossorigin href="/maternity-center/assets/index-B1P26Ny6.css">
