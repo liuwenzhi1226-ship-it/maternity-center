@@ -14,22 +14,22 @@
     }catch(e){return true}
   })();
   if(needsPolyfill){
-    document.write('<script src="/maternity-center/assets/polyfills.js"><\/script>');
+    document.write('<script src="/assets/polyfills.js"><\/script>');
   }
 })();
 </script>
   <script>
-    window.appId = "";
-    window.userId = "";
-    window.tenantId = "";
-    window.userName = "";
-    window.csrfToken = "";
-    window.ENVIRONMENT = "production";
-    window.__BASENAME__ = "/maternity-center";
+    window.appId = "{{appId}}";
+    window.userId = "{{userId}}";
+    window.tenantId = "{{tenantId}}";
+    window.userName = "{{userName}}";
+    window.csrfToken = "{{csrfToken}}";
+    window.ENVIRONMENT = "{{environment}}";
+    window.__BASENAME__ = "{{basename}}";
     const appInfo = {
-      name: "月子中心综合管理平台",
-      avatar: "/maternity-center/favicon.svg",
-      description: "月子中心综合管理平台",
+      name: "{{appName}}",
+      avatar: "{{{appAvatar}}}",
+      description: "{{appDescription}}",
     };
     if (appInfo.name) {
       window._appInfo = appInfo;
@@ -125,55 +125,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>月子中心综合管理平台</title>
-  <script>
-    (function() {
-      var defaults = {
-        appId: '',
-        userId: '',
-        tenantId: '',
-        userName: '',
-        csrfToken: '',
-        IS_MIAODA_PREVIEW: false,
-        __FULLSTACK_RUNTIME_INITIALIZED__: false,
-        __platform__: {},
-        __BASENAME__: '',
-        ENVIRONMENT: 'production',
-        token: '',
-        MIAODA_BUILTIN_TTT: '',
-        lgw_csrf_token: '',
-        _appInfo: null,
-        _bucket_id: '',
-        _IS_Spark_RUNTIME: false,
-        MIAODA_APP_ID: ''
-      };
-      for (var key in defaults) {
-        if (window[key] === undefined) {
-          window[key] = defaults[key];
-        }
-      }
-    })();
-  </script>
+  <title>{{appName}}</title>
   <script>
     try {
-      window.__platform__ = JSON.parse('{}');
+      window.__platform__ = JSON.parse('{{{__platform__}}}');
     } catch (e) {
       console.error('Failed to parse __platform__', e);
     }
   </script>
-  <script type="module" crossorigin src="/maternity-center/assets/index-CPyJXl2c.js"></script>
-  <link rel="modulepreload" crossorigin href="/maternity-center/assets/rolldown-runtime-hePW80VL.js">
-  <link rel="modulepreload" crossorigin href="/maternity-center/assets/radix-CiTMHFvq.js">
-  <link rel="stylesheet" crossorigin href="/maternity-center/assets/index-BX2ljfAj.css">
+  <script type="module" crossorigin src="/assets/index-BhTRBNjt.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-hePW80VL.js">
+  <link rel="modulepreload" crossorigin href="/assets/radix-CiTMHFvq.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-DOu1uf7T.css">
 
-    <meta property="og:title" content="月子中心综合管理平台">
+    <meta property="og:title" content="{{appName}}">
   
-    <meta property="og:description" content="月子中心综合管理平台">
+    <meta property="og:description" content="{{appDescription}}">
   
-    <meta property="og:image" content="/maternity-center/favicon.svg">
+    <meta property="og:image" content="{{appAvatar}}">
   
-    <meta name="description" content="月子中心综合管理平台">
-      <link rel="icon" href="/maternity-center/favicon.svg">
+    <meta name="description" content="{{appDescription}}">
+      <link rel="icon" href="{{appAvatar}}">
   </head>
 
 <body>
