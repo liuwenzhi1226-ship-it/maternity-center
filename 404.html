@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>月子中心管理平台</title>
+  <title>月子中心综合管理平台</title>
   <script>
-    // GitHub Pages SPA fallback: 将子路径重定向到 index.html
-    // 使用 sessionStorage 保存路径，index.html 读取后恢复
-    // 注意：已使用 HashRouter，此文件为兜底
+    // GitHub Pages SPA fallback: 保存目标路径后跳回应用根目录，
+    // index.html 中的恢复脚本会自动还原到该路径
     sessionStorage.setItem('spa-redirect', location.pathname + location.search + location.hash);
-    location.replace('./');
+    location.replace('/maternity-center/');
   </script>
 </head>
 <body>
