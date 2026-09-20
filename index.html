@@ -19,17 +19,17 @@
 })();
 </script>
   <script>
-    window.appId = "{{appId}}";
-    window.userId = "{{userId}}";
-    window.tenantId = "{{tenantId}}";
-    window.userName = "{{userName}}";
-    window.csrfToken = "{{csrfToken}}";
-    window.ENVIRONMENT = "{{environment}}";
-    window.__BASENAME__ = "{{basename}}";
+    window.appId = "";
+    window.userId = "";
+    window.tenantId = "";
+    window.userName = "";
+    window.csrfToken = "";
+    window.ENVIRONMENT = "production";
+    window.__BASENAME__ = "/";
     const appInfo = {
-      name: "{{appName}}",
-      avatar: "{{{appAvatar}}}",
-      description: "{{appDescription}}",
+      name: "月子中心管理平台",
+      avatar: "{/favicon.svg}",
+      description: "月子中心综合管理平台",
     };
     if (appInfo.name) {
       window._appInfo = appInfo;
@@ -125,10 +125,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>{{appName}}</title>
+  <title>月子中心管理平台</title>
   <script>
     try {
-      window.__platform__ = JSON.parse('{{{__platform__}}}');
+      window.__platform__ = ({});
     } catch (e) {
       console.error('Failed to parse __platform__', e);
     }
@@ -138,14 +138,14 @@
   <link rel="modulepreload" crossorigin href="/assets/radix-CiTMHFvq.js">
   <link rel="stylesheet" crossorigin href="/assets/index-DOu1uf7T.css">
 
-    <meta property="og:title" content="{{appName}}">
+    <meta property="og:title" content="月子中心管理平台">
   
-    <meta property="og:description" content="{{appDescription}}">
+    <meta property="og:description" content="月子中心综合管理平台">
   
-    <meta property="og:image" content="{{appAvatar}}">
+    <meta property="og:image" content="/favicon.svg">
   
-    <meta name="description" content="{{appDescription}}">
-      <link rel="icon" href="{{appAvatar}}">
+    <meta name="description" content="月子中心综合管理平台">
+      <link rel="icon" href="/favicon.svg">
   </head>
 
 <body>
